@@ -30,6 +30,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
           <Link href="/" className="text-lg font-semibold text-gray-900" onClick={onClose}>Home</Link>
           <Link href="/about" className="text-lg font-semibold text-gray-900" onClick={onClose}>About</Link>
           <Link href="/projects" className="text-lg font-semibold text-gray-900" onClick={onClose}>Projects</Link>
+          <Link href="/services" className="text-lg font-semibold text-gray-900" onClick={onClose}>Services</Link>
           <Link href="/events" className="text-lg font-semibold text-gray-900" onClick={onClose}>Events</Link>
           <Link href="/media" className="text-lg font-semibold text-gray-900" onClick={onClose}>Media</Link>
           <Link href="/news" className="text-lg font-semibold text-gray-900" onClick={onClose}>News</Link>

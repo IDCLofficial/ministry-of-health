@@ -6,6 +6,7 @@ import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
 import MissionVisionCard from "@/components/DigitalNews";
+import TeamPage from "./Team";
 
 export default function AboutUs() {
     return (
@@ -22,19 +23,7 @@ export default function AboutUs() {
                 imgSrc="/images/health1.png"
                                   altText="Our Story - Imo State Ministry of Health conference event"
             />
-            {/* Commissioner Section */}
-            <CommissionerSection
-                imageSrc="/images/commisioner.png"
-                imageAlt="Hon. Commissioner Lady Nkechi Ugwu"
-                title="Hon. Commissioner Lady Nkechi Ugwu"
-                bio="As Commissioner for Health, Dr. Chioma Egu is a passionate advocate for accessible healthcare, mental health awareness, and community wellbeing. Her leadership has advanced impactful programs supporting healthcare access, disease prevention, and medical infrastructure development across Imo State."
-                details="Beyond spearheading immunization campaigns, Dr. Chioma Vivian Egu was instrumental in positioning Imo State as a national leader in health insurance. Under her guidance, the Imo State Health Insurance Agency significantly expanded enrollment, enhanced maternal health services, and facilitated over 1,200 caesarean sections between April 2023 and April 2025, all while maintaining notably low maternal mortality rates.
-
-Renowned for her strategic vision, results-driven leadership, and unwavering dedication to public health, Dr. Egu continues to shape a more inclusive and responsive healthcare system in Imo State.
-
-"
-                
-            />
+           <TeamPage/>
             <MissionVisionCard />
             {/* Objectives Section */}
             <ObjectivesSection />
