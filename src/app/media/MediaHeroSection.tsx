@@ -23,7 +23,7 @@ const MediaHeroSection: React.FC<MediaHeroSectionProps> = ({ title, subtitle, ba
                 <Title label={title} />
             </div>
             <div className="relative z-10 flex justify-center my-6">
-                <div className="w-full sm:w-[80%] md:w-[60%] flex flex-col items-center text-center">
+                <div className="w-full sm:w-[80%] md:w-full flex flex-col items-center text-center">
                     <h1 className="text-2xl sm:text-3xl md:text-[3rem] font-bold text-white leading-tight">
                          {subtitle}
                     </h1>
