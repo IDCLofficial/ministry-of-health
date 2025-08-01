@@ -46,9 +46,9 @@ export default function CommissionerSection({
           <p className="text-[#777777] text-base md:text-lg mb-6">
             {details}
           </p>
-          <Link href="/about/team" className="px-7 py-3 bg-green-600 text-white rounded text-sm font-semibold shadow hover:bg-green-700 transition">
+          <Link href="/services" className="px-7 py-3 bg-green-600 text-white rounded text-sm font-semibold shadow hover:bg-green-700 transition">
             <button>
-              Meet the Team
+              Services
             </button>
           </Link>
         </div>

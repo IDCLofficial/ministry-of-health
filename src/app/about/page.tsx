@@ -33,10 +33,12 @@ export default function AboutUs() {
             />
             {/* CTASection */}
             <CTASection
-                heading="Join our mission to empower women and promote social justice in Imo State"
-                buttonLabel="See Our Initiatives"
-                buttonHref="/projects"
-            />
+        heading="Your Trusted Health Partner"
+        subtext="Be part of our mission to create a healthier, more accessible, and compassionate healthcare system for all Imo State citizens. We deliver Compassionate Care, Accessible Services, and Future-Ready Systems."
+        buttonLabel="Contact Us"
+        buttonHref="/contact-us"
+      />
+
             {/* Footer */}
             <Footer />
         </div>

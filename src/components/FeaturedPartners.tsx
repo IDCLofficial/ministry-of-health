@@ -6,9 +6,10 @@ const partners = [
   { src: "/images/unicef.jpeg", alt: "unicef" },
   { src: "/images/odo.png", alt: "odo" },
   { src: "/images/caritas.png", alt: "caritas" },
-  { src: "/images/ocda.jpeg", alt: "ocda" },
   { src: "/images/unicef.jpeg", alt: "unicef" },
   { src: "/images/unwomen.png", alt: "imo-map" },
+  { src: "/images/naptip.jpeg", alt: "naptip" },
+
 ];
 
 export default function FeaturedPartners() {

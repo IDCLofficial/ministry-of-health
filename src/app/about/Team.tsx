@@ -8,9 +8,9 @@ const teamMembers = [
     bio: 'Provides visionary leadership and strategic direction for the Ministry of Water Resources in Imo State.'
   },
   {
-    name: 'Mr. Godson Okeoma',
+    name: 'Adinnu Kennedy Ogemdi',
     role: 'Permanent Secretary',
-    image: '/images/white.png',
+    image: '/images/permsec.jpg',
     bio: 'Oversees administrative operations and ensures effective policy implementation.'
   },
  

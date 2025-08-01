@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 
 const sentences = [
-    "Transforming Healthcare Across Imo State",
+    "Transforming Healthcare In Imo State",
     "Delivering Quality Medical Services",
-    "Building Healthier Communities Through Compassionate Care"
+    "Building Healthier Communities"
 ];
 
 export function TypingText() {

@@ -39,7 +39,7 @@ export const Commission = ({ imgSrc, altText, commissionerName, commissionerDesc
                         <p className="text-dark-primary-body text-[1rem] leading-relaxed text-justify">
                             {commissionerDescription}
                         </p>
-                        <AppLink label="Learn More" href="/about-us/team" variant="primary"/>
+                        <AppLink label="Learn More" href="/projects" variant="primary"/>
                     </div>
                 </div>
             </div>

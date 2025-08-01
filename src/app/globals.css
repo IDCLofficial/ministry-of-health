@@ -69,14 +69,16 @@ body {
   
 }
 
+
 .office-hours-scroll-text {
   display: inline-block;
   white-space: nowrap;
   animation: scrollTextLoop 20s linear infinite;
-  font-size: 0.95rem;
+  font-size: 14px;
   font-weight: 600;
   color: white;
 }
+
 
 @keyframes scrollTextLoop {
   0% {

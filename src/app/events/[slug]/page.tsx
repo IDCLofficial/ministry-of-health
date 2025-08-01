@@ -118,12 +118,12 @@ export default function EventDetailPage() {
           ))}
         </div>
       </section>
-     <CTASection
-      heading="Join Us in Empowering Women and Promoting Social Justice"
-      subtext="Be part of our mission to create an inclusive, equitable, and supportive Imo State for all women, children, and vulnerable groups."
-      buttonLabel="Contact Us"
-      buttonHref="/contact-us"
-     />
+      <CTASection
+        heading="Your Trusted Health Partner"
+        subtext="Be part of our mission to create a healthier, more accessible, and compassionate healthcare system for all Imo State citizens. We deliver Compassionate Care, Accessible Services, and Future-Ready Systems."
+        buttonLabel="Contact Us"
+        buttonHref="/contact-us"
+      />
       <Footer />
     </div>
     </>
