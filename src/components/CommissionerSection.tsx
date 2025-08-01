@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 interface CommissionerSectionProps {
   imageSrc: string;
@@ -46,11 +45,7 @@ export default function CommissionerSection({
           <p className="text-[#777777] text-base md:text-lg mb-6">
             {details}
           </p>
-          <Link href="/services" className="px-7 py-3 bg-green-600 text-white rounded text-sm font-semibold shadow hover:bg-green-700 transition">
-            <button>
-              Services
-            </button>
-          </Link>
+        
         </div>
       </div>
     </section>
