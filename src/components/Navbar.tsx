@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="w-[90%] lg:w-full px-0 lg:px-10 mx-auto flex items-center justify-between h-full lg:border-b lg:border-gray-300">
         <div className="flex items-center py-2">
           <Link href="/">
-            <Image src="/images/IMSG-Logo.svg" alt="logo" width={50} height={20} className='object-contain' />
+            <Image src="/images/IMSG-Logo.svg" alt="logo" width={40} height={20} className='object-contain' />
           </Link>
         </div>
         <div className="font-satoshi space-x-6 gap-2 xl:gap-10 text-[16px] md:text-[12px] xl:text-[16px] font-bold hidden lg:flex">
