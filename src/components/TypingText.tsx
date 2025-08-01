@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const sentences = [
-    "Transforming Healthcare In Imo State",
+    "Driving Health Innovation",
     "Delivering Quality Medical Services",
     "Building Healthier Communities"
 ];

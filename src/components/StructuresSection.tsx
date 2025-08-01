@@ -21,10 +21,7 @@ export const StructuresSection = ({imgSrc}: StructuresSectionProps) => {
     }
   ],
   row2: [
-    {
-      title: "Department of Health Planning",
-      description: "Develops and implements health policies, strategic planning, and coordinates with international health partners to advance healthcare in Imo State."
-    },
+  
     {
       title: "Department of Emergency Medical Services",
       description: "Provides emergency medical response services and coordinates disaster preparedness and response efforts across the state."

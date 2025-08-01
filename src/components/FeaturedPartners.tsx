@@ -4,11 +4,12 @@ import Image from "next/image";
 const partners = [
   { src: "/images/undp.jpeg", alt: "undp" },
   { src: "/images/unicef.jpeg", alt: "unicef" },
-  { src: "/images/odo.png", alt: "odo" },
   { src: "/images/caritas.png", alt: "caritas" },
   { src: "/images/unicef.jpeg", alt: "unicef" },
   { src: "/images/unwomen.png", alt: "imo-map" },
   { src: "/images/naptip.jpeg", alt: "naptip" },
+  { src: "/images/caritas.png", alt: "caritas" },
+
 
 ];
 
