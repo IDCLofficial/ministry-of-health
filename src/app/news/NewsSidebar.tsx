@@ -13,34 +13,10 @@ function slugify(text: string) {
 
 const newsList = [
   {
-    title: "Health Ministry Dispels Rumor of Student Death from Diphtheria",
-    date: "19th July 2025",
-    img: "/images/vacc3.png",
+    title: "Ministry Launches 2025 African Vaccination Week",
+    date: "Late June 2025",
+    img: "/images/commisioner.png",
     category: "Latest Updates",
-  },
-  {
-    title: "Health Workers Retrained to Improve Service Delivery",
-    date: "11th July 2025",
-    img: "/images/Homehero.jpg",
-    category: "Latest Updates",
-  },
-  {
-    title: "Diphtheria Outbreak Confirmed in Imo, Patients to Receive Free Treatment",
-    date: "31st May 2025",
-    img: "/images/vacc2.png",
-    category: "Latest Updates",
-  },
-  {
-    title: "Ministries of Primary & Tertiary Health Merged into Unified Health Ministry",
-    date: "29th May 2025",
-    img: "/images/vacc3.png",
-    category: "Policies",
-  },
-  {
-    title: "Imo Health Team Presents National Award in Health Insurance to Governor Uzodimma",
-    date: "9th May 2025",
-    img: "/images/vacc4.png",
-    category: "Policies",
   },
 ];
 

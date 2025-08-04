@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react";
-import MediaSearchBar from "./MediaSearchBar";
 import MediaHeroSection from "./MediaHeroSection";
 import MediaGalleryGrid from "./MediaGalleryGrid";
 import CTASection from "@/components/CTASection";

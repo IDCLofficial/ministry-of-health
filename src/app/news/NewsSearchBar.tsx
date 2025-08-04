@@ -11,36 +11,6 @@ const newsData = [
     date: "Late June 2025",
     image: "/images/vacc3.png",
   },
-  {
-    title: "New Medical Equipment Distributed to Hospitals",
-    description: "The Ministry of Health has distributed modern medical equipment to hospitals across Imo State, improving diagnostic capabilities and treatment options for patients.",
-    date: "Mid June 2025",
-    image: "/images/comm2.png",
-  },
-  {
-    title: "Community Health Workers Training Program",
-    description: "A comprehensive training program for community health workers has been launched to improve healthcare service delivery in rural communities across Imo State.",
-    date: "Early June 2025",
-    image: "/images/Homehero.jpg",
-  },
-  {
-    title: "Mental Health Awareness Campaign Success",
-    description: "The Ministry's mental health awareness campaign has successfully reached over 100,000 citizens, reducing stigma and improving access to mental health services.",
-    date: "Late May 2025",
-    image: "/images/vacc2.png",
-  },
-  {
-    title: "Primary Healthcare Centers Commissioned",
-    description: "Three new primary healthcare centers have been commissioned in rural areas, bringing quality medical services closer to underserved communities in Imo State.",
-    date: "Mid May 2025",
-    image: "/images/vacc3.png",
-  },
-  {
-    title: "Healthcare Emergency Response System",
-    description: "The Ministry has implemented a new emergency response system to improve healthcare delivery during emergencies and natural disasters across the state.",
-    date: "Early May 2025",
-    image: "/images/health3.png",
-  }
 ];
 
 

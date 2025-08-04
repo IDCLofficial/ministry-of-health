@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
@@ -7,19 +7,19 @@ import { useEffect, useState } from "react";
 import SecondTopHero from "@/components/SecondTopHero";
 
 const event = {
-  title: "2025 African Vaccination Week Launch",
-  date: "25 November 2025",
-  time: "10:00 am - 3:00 pm",
+  title: "Flag-off: PHC Upgrading & World Bank Immunization Initiative",
+  date: "15 October 2025",
+  time: "9:00 am - 1:00 pm",
   organizer: "Ministry of Health, Imo State",
   phone: "Nil",
-  address: "Owerri Conference Center, Imo State",
-  description: "Join us for the official launch of the 2025 African Vaccination Week campaign. This event will feature healthcare professionals, community leaders, and government officials coming together to promote immunization and disease prevention across Imo State. The campaign aims to reach over 50,000 children and adults with essential vaccines.",
-  image: "/images/commisioner.png",
+  address: "Imo State Specialist Hospital Premises, Owerri",
+  description: "Join us for the official flag-off of the Primary Healthcare Centre (PHC) Upgrading and World Bank Immunization Initiative. This transformative event aims to strengthen the healthcare infrastructure of Imo State and boost immunization coverage, particularly in rural areas. Government leaders, healthcare professionals, and development partners will be in attendance.",
+  image: "/images/health1.png", 
 };
 
 const speakers = Array(4).fill({
-  name: "Hon. Commissioner Lady Nkechi Ugwu",
-  role: "Lead Speaker",
+  name: "Hon. Dr. Chioma Egu ",
+  role: "Keynote Speaker",
   img: "/images/commisioner.png",
 });
 
@@ -82,6 +82,7 @@ export default function EventDetailPage() {
       <section className="relative w-full h-[220px] flex items-center justify-center bg-gradient-to-br from-green-900/80 to-black/80">
         <h1 className="text-white text-3xl md:text-5xl font-bold text-center z-10">{event.title}</h1>
       </section>
+
       {/* Event Image & Countdown */}
       <section className="relative w-full max-w-6xl mx-auto flex flex-col items-center pt-10 pb-6 px-4">
         <div className="w-full max-w-4xl relative">
@@ -92,6 +93,7 @@ export default function EventDetailPage() {
         </div>
         <p className="text-gray-700 mt-8 mb-8 text-center max-w-3xl mx-auto">{event.description}</p>
       </section>
+
       {/* Event Details */}
       <section className="w-full max-w-6xl mx-auto px-4 mb-12">
         <h2 className="text-xl font-bold mb-4">EVENT DETAILS</h2>
@@ -103,6 +105,7 @@ export default function EventDetailPage() {
           <div><span className="font-semibold">PHONE:</span> <span className="ml-2">{event.phone}</span></div>
         </div>
       </section>
+
       {/* Speakers */}
       <section className="w-full max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-xl font-bold mb-6">SPEAKERS</h2>
@@ -118,14 +121,17 @@ export default function EventDetailPage() {
           ))}
         </div>
       </section>
+
+      {/* CTA Section */}
       <CTASection
         heading="Your Trusted Health Partner"
         subtext="Be part of our mission to create a healthier, more accessible, and compassionate healthcare system for all Imo State citizens. We deliver Compassionate Care, Accessible Services, and Future-Ready Systems."
         buttonLabel="Contact Us"
         buttonHref="/contact-us"
       />
+
       <Footer />
     </div>
     </>
   );
-} 
+}
