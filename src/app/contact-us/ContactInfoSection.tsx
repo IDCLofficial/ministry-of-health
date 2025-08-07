@@ -6,10 +6,8 @@ const contactInfo = {
   email: "ministryofhealthprimaryhealth@gmail.com",
   phone: "+234 703 795 0397",
   socials: [
-    { icon: <FaFacebookF />, href: "#" },
-    { icon: <FaTwitter />, href: "#" },
-    { icon: <FaInstagram />, href: "#" },
-    { icon: <FaLinkedinIn />, href: "#" },
+    { icon: <FaFacebookF />, href: "https://web.facebook.com/p/Imo-State-Ministry-Of-Health-61575637561313/?_rdc=1&_rdr#" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/imoministryofhealth?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
   ],
 };
 

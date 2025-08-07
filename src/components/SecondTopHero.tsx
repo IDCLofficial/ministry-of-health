@@ -9,7 +9,7 @@ export default function SecondTopHero({ headingText }: SecondTopHeroProps) {
   return (
     <section className="relative w-full h-[60vh] lg:h-[80vh] flex items-center justify-center">
       <Image
-        src="/images/women3.jpg"
+        src="/images/gradient.png"
         alt="Hero"
         fill
         className="object-cover w-full h-full"

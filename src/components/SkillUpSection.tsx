@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import AnimatedSection from "./AnimatedSection2";
+import AnimatedSection from "./AnimatedSection";
 
 export default function SkillUpSection() {
   return (

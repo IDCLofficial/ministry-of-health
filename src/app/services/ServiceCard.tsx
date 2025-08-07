@@ -1,4 +1,4 @@
-import AnimatedSection from "@/components/AnimatedSection2";
+import AnimatedSection from "@/components/AnimatedSection";
 import React from "react";
 
 const services = [

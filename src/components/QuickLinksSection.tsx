@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
 const links = [
   {
@@ -24,7 +25,7 @@ const links = [
   {
     title: "Departments",
     description: "Learn about our departments and their activities.",
-    image: "/images/vacc4.png",
+    image: "/images/health3.png",
     href: "/departments",
   },
 ];
@@ -43,8 +44,10 @@ export default function QuickLinksSection() {
             <Link href={link.href} className="flex-1 flex flex-col justify-between relative p-4 md:p-6 bg-white -mt-[30px] md:-mt-[30px] 
             w-[90%] h-[120px] md:h-[180px] mx-auto shadow-md hover:scale-105 transition-all duration-300">
               <div>
+                <AnimatedSection>
                 <h3 className={`text-dark-secondary text-base md:text-lg font-bold mb-2`}>{link.title}</h3>
                 <p className="text-dark-primary-body text-[1rem] mb-4 md:mb-6">{link.description}</p>
+             </AnimatedSection>
               </div>
               <span className="self-end bg-green-700 hover:bg-green-800 text-white w-8 max-h-8 flex items-center justify-center transition">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">

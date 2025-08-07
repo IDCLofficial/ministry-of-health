@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NewsHeroSection from "./NewsHeroSection";
 import NewsBodySection from "./NewsBodySection";
+import Link from "next/link";
 
 const latestNews = [
   {
@@ -46,7 +47,7 @@ export default function NewsDetailPage() {
             <div className="w-full flex justify-center my-8">
               <div className="w-full max-w-md rounded-xl overflow-hidden">
                 <Image
-                  src="/images/women2.jpg"
+                  src="/images/health3.png"
                   alt="Vaccination Week Outreach"
                   width={600}
                   height={300}
@@ -80,14 +81,19 @@ export default function NewsDetailPage() {
               The 2025 African Vaccination Week marks a step forward in achieving universal health coverage in Imo State, reinforcing the Ministry’s dedication to accessible and inclusive healthcare for all.
             </p>
           </div>
+      
         </NewsBodySection>
       </section>
+      
 
       {/* Section 2: Latest News */}
       <div className="w-full bg-[#181c23] py-10">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-white text-xl font-semibold mb-6">LATEST NEWS</h2>
-          <div className="flex flex-col md:flex-row gap-6">
+            <Link href="/news" className="bg-green-600 text-white px-6 py-2 m-4">
+        Go back to news
+        </Link>
+          {/* <h2 className="text-white text-xl font-semibold mb-6">LATEST NEWS</h2> */}
+          {/* <div className="flex flex-col md:flex-row gap-6">
             {latestNews.map((item, idx) => (
               <div key={idx} className="bg-[#232323] rounded-xl overflow-hidden flex-1 min-w-[220px] max-w-xs">
                 <div className="relative w-full h-28">
@@ -99,7 +105,7 @@ export default function NewsDetailPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 

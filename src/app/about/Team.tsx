@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 const teamMembers = [
   {
-    name: 'Hon. Commissioner Lady Nkechi Ugwu',
+    name: 'Hon. Commissioner Dr. Chioma Egu',
     role: 'Commissioner',
     image: '/images/commisioner.png',
-    bio: 'Provides visionary leadership and strategic direction for the Ministry of Water Resources in Imo State.'
+    bio: 'Provides visionary leadership and strategic direction for the Ministry of Health in Imo State.'
   },
   {
     name: 'Adinnu Kennedy Ogemdi',
