@@ -21,8 +21,8 @@ export const SectionHero = ({ aboutText, imgSrc, altText }: SectionHeroProps) =>
                         </p>
                     </div>
                     {/* Right Section - Image */}
-                    <div className="relative w-full lg:w-[30%] min-h-[220px] sm:min-h-[350px] lg:min-h-0 h-full flex-1 flex items-stretch justify-center mt-6 lg:mt-0">
-                        <div className="relative w-full h-[350px]">
+                    <div className="relative w-full lg:w-[30%] min-h-[220px] sm:min-h-[450px] lg:min-h-0 h-full flex-1 flex items-stretch justify-center mt-6 lg:mt-0">
+                        <div className="relative w-full h-[450px]">
                             <Image 
                                 src={imgSrc}
                                 alt={altText}                       

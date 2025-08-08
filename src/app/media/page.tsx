@@ -20,7 +20,7 @@ const mediaItems = [
   {
     image: "/images/vacc4.png",
     title: "Diabetes Awareness & Care Training Program",
-    isVideo: true,
+    isVideo: false,
   },
   {
     image: "/images/Homehero.jpg",
@@ -30,7 +30,7 @@ const mediaItems = [
   {
     image: "/images/vacc2.png",
     title: "Eye Can See Initiative - Free Cataract Surgeries",
-    isVideo: true,
+    isVideo: false,
   },
   {
     image: "/images/vacc3.png",
