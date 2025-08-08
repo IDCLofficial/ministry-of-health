@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import AnimatedSection from "../AnimatedSection";
 
 const projects = [
   {
@@ -66,8 +67,10 @@ export default function Projects() {
                   key={idx} 
                   className="p-4 bg-gray-100 rounded-xl border-l-4 border-gray-400 shadow-sm cursor-pointer transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-300 hover:scale-[1.02] hover:bg-gray-200 hover:border-gray-600 transform hover:-translate-y-1"
                 >
+                  <AnimatedSection>
                   <h3 className="font-semibold text-lg text-gray-700 mb-1 transition-colors duration-300 hover:text-gray-900">{project.title}</h3>
                   <p className="text-gray-600 text-sm transition-colors duration-300 hover:text-gray-800">{project.description}</p>
+                  </AnimatedSection>
                 </div>
               ))}
             </div>

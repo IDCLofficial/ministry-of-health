@@ -79,9 +79,14 @@ export default function NewsSidebar() {
       <div>
         <h3 className="font-bold text-lg mb-4">POPULAR NEWS</h3>
         <ul className="space-y-4">
-          {popularNews.map((news, idx) => (
+        {popularNews.map((news, idx) => (
             <li key={idx}>
-              <Link href={`/news/${slugify(news.title)}`} className="flex gap-3 items-center group hover:text-green-700 transition-colors w-full">
+               <Link
+          key={idx}
+          href={`/news/${slugify(news.title)}`}
+          className="bg-white overflow-hidden flex flex-col hover:shadow-md transition cursor-pointer"
+        >
+              <div className="flex gap-3 items-center group hover:text-green-700 transition-colors w-full">
                 <div className="w-14 h-14 relative rounded overflow-hidden">
                   <Image src={news.img} alt={news.title} fill className="object-cover" />
                 </div>
@@ -89,6 +94,7 @@ export default function NewsSidebar() {
                   <div className="text-xs font-semibold leading-tight line-clamp-2 group-hover:text-green-700">{news.title}</div>
                   <div className="text-[10px] text-gray-500 mt-1">{news.date}</div>
                 </div>
+              </div>
               </Link>
             </li>
           ))}
