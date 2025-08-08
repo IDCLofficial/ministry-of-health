@@ -11,7 +11,7 @@ const event = {
   date: "15 October 2025",
   time: "9:00 am - 1:00 pm",
   organizer: "Ministry of Health, Imo State",
-  phone: "Nil",
+  phone: "08137334102",
   address: "Ihitte-Uboma",
   description: "Join us for the official flag-off of the Primary Healthcare Centre (PHC) Upgrading and World Bank Immunization Initiative. This transformative event aims to strengthen the healthcare infrastructure of Imo State and boost immunization coverage, particularly in rural areas. Government leaders, healthcare professionals, and development partners will be in attendance.",
   image: "/images/health1.png", 
