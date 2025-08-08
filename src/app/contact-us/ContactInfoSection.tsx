@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaFacebookF, FaTwitter, FaInstagra
 const contactInfo = {
   address: "Block 9, State Secretariat Complex, Owerri, Imo State",
   email: "ministryofhealthprimaryhealth@gmail.com",
-  phone: "+2347035727841",
+  phone: "+2348137334102",
   socials: [
     { icon: <FaFacebookF />, href: "https://web.facebook.com/p/Imo-State-Ministry-Of-Health-61575637561313/?_rdc=1&_rdr#" },
     { icon: <FaInstagram />, href: "https://www.instagram.com/imoministryofhealth?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },

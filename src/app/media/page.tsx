@@ -8,17 +8,17 @@ import Footer from "@/components/Footer";
 
 const mediaItems = [
   {
-    image: "/images/comm2.png",
+    image: "/images/media3.png",
     title: "PHC Upgrading & Immunization Launch - Imo State",
     isVideo: false,
   },
   {
-    image: "/images/commisioner.png",
+    image: "/images/abouthealth.png",
     title: "Maternal, Newborn & Child Health Week 2025",
     isVideo: false,
   },
   {
-    image: "/images/vacc4.png",
+    image: "/images/media4.png",
     title: "Diabetes Awareness & Care Training Program",
     isVideo: false,
   },
@@ -28,15 +28,11 @@ const mediaItems = [
     isVideo: false,
   },
   {
-    image: "/images/vacc2.png",
+    image: "/images/media2.png",
     title: "Eye Can See Initiative - Free Cataract Surgeries",
     isVideo: false,
   },
-  {
-    image: "/images/vacc3.png",
-    title: "Healthcare Emergency Response System Launch",
-    isVideo: false,
-  },
+
   {
     image: "/images/comm2.png",
     title: "Medical Equipment Distribution to Hospitals",
@@ -48,7 +44,7 @@ const mediaItems = [
     isVideo: false,
   },
   {
-    image: "/images/vacc4.png",
+    image: "/images/media1.png",
     title: "Community Health Workers Training Program",
     isVideo: false,
   },
