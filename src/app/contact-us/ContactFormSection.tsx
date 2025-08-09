@@ -44,6 +44,7 @@ const ContactFormSection = () => {
       icon: "success",
       title: "Message Sent!",
       text: "Thanks for contacting us. We'll get back to you shortly.",
+      confirmButtonColor: "green"
     });
 
     // Reset form

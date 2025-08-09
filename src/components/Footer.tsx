@@ -81,7 +81,7 @@ export default function Footer() {
         icon: "success",
         title: "Subscribed!",
         text: "You’ve successfully joined our newsletter.",
-        confirmButtonColor: "#16a34a"
+        confirmButtonColor: "green"
       });
       setEmail("");
     } else {

@@ -47,7 +47,7 @@ function Countdown({ targetDate }: { targetDate: string }) {
   }, [targetDate]);
 
   return (
-    <div className="bg-green-700 text-white rounded-lg px-4 md:px-8 py-4 flex gap-6 items-center text-center w-[96%] md:w-max mt-4 mb-6 md:mb-0 md:absolute md:bottom-6 md:right-10 shadow-lg">
+    <div className="bg-green-700 text-white rounded-lg px-2 md:px-8 py-4 flex gap-6 items-center text-center w-[90%] md:w-max mt-4 mb-6 md:mb-0 md:absolute md:bottom-6 md:right-10 shadow-lg">
       <div>
         <div className="text-sm md:text-2xl font-bold">{timeLeft.days}</div>
         <div className="text-xs uppercase">Days</div>
