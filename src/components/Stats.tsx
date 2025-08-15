@@ -4,10 +4,13 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: 5000, suffix: "+", desc: "Women Empowered Across Imo State" },
-  { value: 120, suffix: "", desc: "Social Welfare Programs Initiated" },
-  { value: 200, suffix: "", desc: "Communities Reached" },
-  { value: 10000, suffix: "+", desc: "Children & Vulnerable Supported" },
+  
+    { value: 5000, suffix: "+", desc: "Women Accessing Quality Healthcare Services" },
+    { value: 120, suffix: "", desc: "Public Health & Welfare Programs Implemented" },
+    { value: 200, suffix: "", desc: "Communities Reached with Medical Outreach" },
+    { value: 10000, suffix: "+", desc: "Children & Vulnerable Persons Provided Care" },
+  
+  
 ];
 
 export default function Stats() {

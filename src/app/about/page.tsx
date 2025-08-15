@@ -1,6 +1,5 @@
 import { SectionHero } from "@/components/SectionHero";
 import { ObjectivesSection } from "@/components/ObjectivesSection";
-import CommissionerSection from "@/components/CommissionerSection";
 import { StructuresSection } from "@/components/StructuresSection";
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";

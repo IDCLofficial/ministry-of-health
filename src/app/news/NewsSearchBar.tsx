@@ -3,16 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-// Move newsList here or import from a shared location
-const newsData = [
-  {
-    title: "Ministry Launches 2025 African Vaccination Week",
-    description: "The Imo State Ministry of Health recently launched the 2025 African Vaccination Week campaign, reaching over 50,000 children and adults across the state. The initiative was praised by healthcare professionals.",
-    date: "Late June 2025",
-    image: "/images/vacc3.png",
-  },
-];
+import { NewsItem } from './newsData';
 
+interface NewsSearchBarProps {
+  newsList: NewsItem[];
+}
 
 function slugify(text: string) {
   return text
@@ -21,14 +16,14 @@ function slugify(text: string) {
     .replace(/(^-|-$)+/g, '');
 }
 
-export default function NewsSearchBar() {
+export default function NewsSearchBar({ newsList }: NewsSearchBarProps) {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState(newsData);
+  const [results, setResults] = useState(newsList);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   const suggestions =
     query.length > 0
-      ? newsData.filter((item) =>
+      ? newsList.filter((item) =>
           item.title.toLowerCase().includes(query.toLowerCase())
         )
       : [];
@@ -37,7 +32,7 @@ export default function NewsSearchBar() {
     e.preventDefault();
     const q = query.toLowerCase();
     setResults(
-      newsData.filter(
+      newsList.filter(
         (item) =>
           item.title.toLowerCase().includes(q) ||
           item.description.toLowerCase().includes(q)
@@ -56,13 +51,12 @@ export default function NewsSearchBar() {
     setShowSuggestions(false);
   }
 
+  // Reset search when newsList changes
   useEffect(() => {
-    return () => {
-      setQuery("");
-      setResults(newsData);
-      setShowSuggestions(false);
-    };
-  }, []);
+    setQuery("");
+    setResults(newsList);
+    setShowSuggestions(false);
+  }, [newsList]);
 
   return (
     <div className="w-full flex flex-col items-center py-8 bg-white relative">

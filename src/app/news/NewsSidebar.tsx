@@ -1,8 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import { NewsItem } from './newsData';
+
+interface NewsSidebarProps {
+  selectedCategory: string | null;
+  setSelectedCategory: (cat: string | null) => void;
+  newsList: NewsItem[];
+}
 
 function slugify(text: string) {
   return text
@@ -11,37 +15,11 @@ function slugify(text: string) {
     .replace(/(^-|-$)+/g, '');
 }
 
-const newsList = [
-  {
-    title: "Ministry Launches 2025 African Vaccination Week",
-    date: "Late June 2025",
-    img: "/images/commisioner.png",
-    category: "Latest Updates",
-  },
-];
-
-const categories = [
-  { name: "Latest Updates" },
-  { name: "Policies" },
-];
-
-const popularNews = newsList;
-
-export default function NewsSidebar() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const selectedCategory = searchParams.get('category');
-
-  const handleCategorySelect = (category: string) => {
-    if (category === selectedCategory) {
-      // If clicking the same category, clear the filter
-      router.push('/news');
-    } else {
-      // Set the new category
-      router.push(`/news?category=${encodeURIComponent(category)}`);
-    }
-  };
-
+export default function NewsSidebar({ selectedCategory, setSelectedCategory, newsList }: NewsSidebarProps) {
+  // Extract unique categories from the news data
+  const categories = Array.from(
+    new Set(newsList.map((news: NewsItem) => news.category).filter(Boolean) as string[])
+  ).map(categoryName => ({ name: categoryName }));
   return (
     <aside className="w-full md:w-64 flex-shrink-0">
       <div className="mb-8">
@@ -49,16 +27,13 @@ export default function NewsSidebar() {
         <ul className="space-y-2">
           {categories.map((cat, idx) => {
             const count = newsList.filter(news => news.category === cat.name).length;
-            const isSelected = selectedCategory === cat.name;
+            const isActive = selectedCategory === cat.name;
             return (
               <li key={idx} className="flex justify-between text-gray-700 text-sm">
-                <button 
-                  onClick={() => handleCategorySelect(cat.name)}
-                  className={`flex justify-between w-full transition-colors ${
-                    isSelected 
-                      ? 'text-green-700 font-semibold' 
-                      : 'hover:text-green-700'
-                  }`}
+                <button
+                  type="button"
+                  onClick={() => setSelectedCategory(isActive ? null : cat.name)}
+                  className={`flex justify-between w-full hover:text-green-700 transition-colors ${isActive ? 'font-bold text-green-700' : ''}`}
                 >
                   <span>{cat.name}</span>
                   <span>{count}</span>
@@ -67,19 +42,14 @@ export default function NewsSidebar() {
             );
           })}
         </ul>
-        {selectedCategory && (
-          <button 
-            onClick={() => router.push('/news')}
-            className="mt-4 text-sm text-gray-500 hover:text-green-700 transition-colors"
-          >
-            ← Show All News
-          </button>
-        )}
       </div>
       <div>
-        <h3 className="font-bold text-lg mb-4">POPULAR NEWS</h3>
+        <h3 className="font-bold text-lg mb-4">LATEST NEWS</h3>
         <ul className="space-y-4">
-        {popularNews.map((news, idx) => (
+          {newsList
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+            .slice(0, 3)
+            .map((news: NewsItem, idx: number) => (
             <li key={idx}>
                <Link
           key={idx}
@@ -87,8 +57,8 @@ export default function NewsSidebar() {
           className="bg-white overflow-hidden flex flex-col hover:shadow-md transition cursor-pointer"
         >
               <div className="flex gap-3 items-center group hover:text-green-700 transition-colors w-full">
-                <div className="w-14 h-14 relative rounded overflow-hidden">
-                  <Image src={news.img} alt={news.title} fill className="object-cover" />
+                <div className="w-20 h-14 relative rounded overflow-hidden">
+                  <Image src={news.image} alt={news.title} fill className="object-cover" />
                 </div>
                 <div>
                   <div className="text-xs font-semibold leading-tight line-clamp-2 group-hover:text-green-700">{news.title}</div>
