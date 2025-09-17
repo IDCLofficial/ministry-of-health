@@ -15,6 +15,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
     { href: '/services', label: 'Services' },
     { href: '/projects', label: 'Projects' },
     { href: '/news', label: 'News' },
+    { href: '/data', label: 'Data' },
     { href: '/departments', label: 'Departments' },
     { href: '/events', label: 'Events' },
     { href: '/media', label: 'Media' },
