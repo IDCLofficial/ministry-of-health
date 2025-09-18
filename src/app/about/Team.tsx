@@ -8,7 +8,7 @@ const teamMembers = [
     bio: 'Provides visionary leadership and strategic direction for the Ministry of Health in Imo State.'
   },
   {
-    name: 'Adinnu Kennedy Ogemdi',
+    name: 'Mr Adinnu Kennedy Ogemdi',
     role: 'Permanent Secretary',
     image: '/images/permsec.jpg',
     bio: 'Oversees administrative operations and ensures effective policy implementation.'

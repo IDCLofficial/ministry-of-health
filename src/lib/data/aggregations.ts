@@ -100,3 +100,9 @@ export function serviceYearsHistogram(rows: StaffRow[]) {
   }, bins);
 }
 
+/** Marital Status distribution */
+export function byMaritalStatus(rows: StaffRow[]) {
+  return aggregateCounts(rows, (r) =>
+    typeof r["Marital Status"] === "string" ? r["Marital Status"] : "Unknown"
+  );
+}

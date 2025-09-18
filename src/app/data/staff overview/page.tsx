@@ -31,7 +31,7 @@ export default function StaffOverviewDashboard () {
   }, []);
 
   return (
-    <main>
+    <main className="my-3">
         <div className="w-full text-center py-3">
             <h1 className="text-3xl font-extrabold">
                 STAFF OVERVIEW

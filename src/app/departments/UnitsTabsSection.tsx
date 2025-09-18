@@ -6,7 +6,7 @@ import Image from "next/image";
 const departments = [
   {
     name: "Department of Public Health",
-    image: "/images/Homehero.jpg",
+    image: "/images/hero.png",
     description: "Focuses on disease prevention, health promotion, and community health programs to improve the overall health outcomes of Imo State citizens."
   },
   {
@@ -16,7 +16,7 @@ const departments = [
   },
   {
     name: "Department of Primary Healthcare",
-    image: "/images/vacc3.png",
+    image: "/images/vacc4.png",
     description: "Manages primary healthcare centers and community health programs, focusing on accessible healthcare services for rural and underserved communities."
   },
   {

@@ -75,12 +75,12 @@ export default function GroupBar() {
       {/* Manual Legend */}
       <div className="mt-2 text-sm space-y-1">
         {Object.entries(GROUP_LABELS).map(([abbr, full], i) => (
-          <div key={abbr} className="flex items-center gap-2">
+          <div key={abbr} className="flex items-center gap-2 border-2 border-gray-400 p-2 md:border-none md:p-o my-2 md:my-0">
             <span
               className="inline-block w-3 h-3 rounded-sm"
               style={{ backgroundColor: COLORS[i % COLORS.length] }}
             />
-            <span className="font-medium">{abbr}</span> → {full}
+            <span className="text-xs md:text-lg mx-1">{abbr}:</span>  {full}
           </div>
         ))}
       </div>

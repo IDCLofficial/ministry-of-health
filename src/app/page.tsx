@@ -16,7 +16,7 @@ export default function Home() {
      
       {/* hero section */}
       <HeroSection
-        backgroundImage="/images/Homehero.jpg"
+        backgroundImage="/images/hero.png"
         overlayText="Imo State Ministry of Health"
         heading="Transforming Healthcare "
         subheading="in Imo State"

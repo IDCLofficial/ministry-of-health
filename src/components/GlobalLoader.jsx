@@ -32,7 +32,7 @@ export default function GlobalLoader() {
       <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-gradient-to-br from-[rgba(1,50,32,0.9)] via-[rgba(0,20,10,0.7)] to-transparent
 ">
          <svg
-          className="animate-spin-slow"
+          className="animate-spin"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     width="90"
