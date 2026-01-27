@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import GlobalLoader from "@/components/GlobalLoader";
 
-
+// optimized metadata for seo
 export const metadata: Metadata = {
   title: {
     default: 'Imo State Ministry of Health',
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     google: 'RHU2Q17XzVZYPJnLxDp0pXBaiblERgGFz8O1VLraDH0',
   },
 }
+
 export default function RootLayout({
   children,
 }: Readonly<{
