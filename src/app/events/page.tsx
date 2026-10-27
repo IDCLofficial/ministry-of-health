@@ -2,6 +2,13 @@ import EventsListSection from "./EventsListSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { TopHero } from "@/components/TopHero";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Health Events",
+  description: "Upcoming and past events organised by the Imo State Ministry of Health, including programmes, campaigns and public engagements.",
+  path: "/events",
+});
 
 export default function EventsPage() {
   return (

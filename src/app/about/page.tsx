@@ -6,6 +6,13 @@ import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
 import MissionVisionCard from "@/components/DigitalNews";
 import TeamPage from "./Team";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About the Ministry",
+  description: "Learn about the Imo State Ministry of Health: its mandate, mission and vision, objectives and structure in coordinating healthcare services across Imo State.",
+  path: "/about",
+});
 
 export default function AboutUs() {
     return (

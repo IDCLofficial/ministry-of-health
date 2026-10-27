@@ -2,6 +2,13 @@ import UnitsTabsSection from "./UnitsTabsSection";
 import Footer from "@/components/Footer";
 import { TopHero } from "@/components/TopHero";
 import CTASection from "@/components/CTASection";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Departments",
+  description: "Departments of the Imo State Ministry of Health: Public Health, Medical Services, Primary Healthcare, Health Planning and Emergency Medical Services.",
+  path: "/departments",
+});
 
 export default function UnitsPage() {
   return (

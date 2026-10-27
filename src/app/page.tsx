@@ -8,6 +8,13 @@ import Stats from "@/components/Stats";
 import FeaturedPartners from "@/components/FeaturedPartners";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: { absolute: "Imo State Ministry of Health | Healthcare Services in Imo State" },
+  description: "Official website of the Imo State Ministry of Health. Public health programmes, primary healthcare, hospital services, health news and events for citizens of Imo State, Nigeria.",
+  path: "/",
+});
 
 export default function Home() {
   return (
